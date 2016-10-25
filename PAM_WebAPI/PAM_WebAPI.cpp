@@ -1,9 +1,13 @@
+//////////////////////////////////////////////////////////////////////
 //
-// include header of PAM_WebAPI
+//                    PI and more
+//              PAM_WiFiWebAPI library
 //
-// created by PI and more, piandmore@j-tools.net
-// More extensive documentation can be found here:
-// https://piandmore.wordpress.com/tag/pam_webapi
+// https://piandmore.wordpress.com/tag/pam_wifiwebapi
+//
+//////////////////////////////////////////////////////////////////////
+//
+// Include the PAM_WiFiWebAPI header
 //
 #include <PAM_WebAPI.h>
 
