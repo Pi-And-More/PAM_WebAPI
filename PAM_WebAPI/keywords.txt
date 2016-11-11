@@ -1,3 +1,4 @@
+PAM_Defines	KEYWORD2
 PAM_WebAPI	KEYWORD2
 ifttt	KEYWORD2
 thingspeak	KEYWORD2
