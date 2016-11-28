@@ -13,7 +13,7 @@
 //
 
 //
-// Include the PAM_WebAPI header
+// Include the PAM_WebAPI library
 //
 #include <PAM_WebAPI.h>
 

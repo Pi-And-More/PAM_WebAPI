@@ -7,14 +7,16 @@ The functions offered are:
 //
 // IFTTT, IF This Than That, is a webbased service on ifttt.com that offers an
 // API that allows you to create Maker events. With this call you can supply
-// three optional values along with an event type. The event type is mandatory.
+// three optional values along with an event type. The API key and event type are mandatory.
 // There are four instances of this function, depending on whether you call
 // them with no, one, two or three parameters.
 //
-String ifttt (String event, String value1, String value2, String value3)
-String ifttt (String event, String value1, String value2)
-String ifttt (String event, String value1)
-String ifttt (String event)
+// If you have defined IFTTT in PAM_Defines.h then this section will be included.
+//
+String ifttt (String api, String event, String value1, String value2, String value3)
+String ifttt (String api, String event, String value1, String value2)
+String ifttt (String api, String event, String value1)
+String ifttt (String api, String event)
 
 //
 // ThingSpeak is a webbased service on https://thingspeak.com/ that offers

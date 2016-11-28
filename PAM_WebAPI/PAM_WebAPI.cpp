@@ -20,29 +20,31 @@
 //
 // IFTTT, IF This Than That, is a webbased service on ifttt.com that offers an
 // API that allows you to create Maker events. With this call you can supply
-// three optional values along with an event type. The event type is mandatory.
+// three optional values along with an event type. The API key and event type are mandatory.
 // There are four instances of this function, depending on whether you call
 // them with no, one, two or three parameters.
 //
+// If you have defined IFTTT in PAM_Defines.h then this section will be included.
+//
 
-#ifdef IFTTTKEY
-String ifttt (String event, String value1, String value2, String value3) {
+#ifdef IFTTT
+String ifttt (String api, String event, String value1, String value2, String value3) {
   //
   // The getURL function is used to handle the API call
   //
-  return getURL("maker.ifttt.com","/trigger/"+event+"/with/key/"+IFTTTKEY+"?value1="+value1+"&value2="+value2+"&value3="+value3);
+  return getURL("maker.ifttt.com","/trigger/"+event+"/with/key/"+api+"?value1="+value1+"&value2="+value2+"&value3="+value3);
 }
 
-String ifttt (String event, String value1, String value2) {
-  return ifttt(event,value1,value2,"");
+String ifttt (String api, String event, String value1, String value2) {
+  return ifttt(api,event,value1,value2,"");
 }
 
-String ifttt (String event, String value1) {
-  return ifttt(event,value1,"","");
+String ifttt (String api, String event, String value1) {
+  return ifttt(api,event,value1,"","");
 }
 
-String ifttt (String event) {
-  return ifttt(event,"","","");
+String ifttt (String api, String event) {
+  return ifttt(api,event,"","","");
 }
 #endif
 

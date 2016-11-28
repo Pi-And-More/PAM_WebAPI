@@ -2,13 +2,18 @@
 #define PAM_Defines_H
 
 //
-// This is where you define your own IFTTT.com key
+// By defining IFTTT, you are telling the compiler to include
+// the IF This That That functions. If you do not use these,
+// you should not include:
+// #define IFTTT
 //
-#define IFTTTKEY "YOUR-KEY-HERE"
+#define IFTTT
 
 //
-// If you plan to use ThingSpeak, make sure you 
-// define THINGSPEAK
+// By defining THINGSPEAK, you are telling the compiler to include
+// the ThingSpeak functions. If you do not use these,
+// you should not include:
+// #define THINGSPEAK
 //
 #define THINGSPEAK
 

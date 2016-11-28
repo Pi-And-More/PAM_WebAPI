@@ -4,7 +4,7 @@
 #include <Arduino.h>
 #include <PAM_Defines.h>
 
-#ifdef IFTTTKEY
+#ifdef IFTTT
 //
 // IFTTT, IF This Than That, is a webbased service on ifttt.com that offers an
 // API that allows you to create Maker events. With this call you can supply
@@ -12,12 +12,12 @@
 // There are four instances of this function, depending on whether you call
 // them with no, one, two or three parameters.
 //
-// If you have defined your key in PAM_Defines.h then this section will be included.
+// If you have defined IFTTT in PAM_Defines.h then this section will be included.
 //
-String ifttt (String);
 String ifttt (String, String);
 String ifttt (String, String, String);
 String ifttt (String, String, String, String);
+String ifttt (String, String, String, String, String);
 #endif
 
 //
